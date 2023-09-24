@@ -14,13 +14,18 @@ header{
 }
 
 section{
-    background-color: rgb(150, 185, 150);
+    background-color: white;
     padding: 15px;
     border-radius: 15px;
     width: 500px;
     margin: auto;
-    color: white;
+    color: rgb(23, 11, 92);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.432);
+}
+
+div{
+    text-align: center;
+    padding: 10px;
 }
 
 footer{
