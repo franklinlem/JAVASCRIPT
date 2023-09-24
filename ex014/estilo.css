@@ -11,15 +11,17 @@ header{
     background-color: white;
     border-radius: 10px;
     text-align: center;
+    text-shadow: 2px 2px 2px rgb(170, 155, 155);
 }
 
 section{
-    background-color: white;
+    background-color: rgba(245, 192, 192, 0.993);
     padding: 15px;
     border-radius: 15px;
     width: 500px;
     margin: auto;
     color: rgb(23, 11, 92);
+    font-weight: bold;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.432);
 }
 
@@ -32,4 +34,5 @@ footer{
     text-align: center;
     color: white;
     font-style: italic;
+    text-shadow: 2px 2px 2px black;
 }
