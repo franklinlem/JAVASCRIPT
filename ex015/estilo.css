@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background: linear-gradient(to right, rgb(148, 148, 219), rgb(230, 156, 156));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15pt;
+    margin: 30px;
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section{
+    background-color: rgb(150, 185, 150);
+    padding: 15px;
+    border-radius: 15px;
+    width: 500px;
+    margin: auto;
+    color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.432);
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
