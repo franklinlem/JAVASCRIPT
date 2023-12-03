@@ -15,7 +15,19 @@
 <body>
     <h1>Aula sobre DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar DOM em Javascript</p>
-    <div>Clique em mim!</div>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
+    <div id="msg">Clique em mim!</div>
+    <script>
+        window.document.writeln(document.URL)
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.writeln('Está escrito: ' + p1.innerText)
+        p1.style.color ='pink'
+        corpo.style.background = 'black'
+        var m = document.getElementById('msg')
+        m.style.background = 'green'
+        var d = document.querySelector('div#msg')
+        d.style.color = 'black'
+    </script>
 </body>
 </html>
