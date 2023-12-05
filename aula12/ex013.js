@@ -9,7 +9,7 @@ var diaSem = agora.getDay()
     5 = sexta
     6 = sábado
 */
-console.log(diaSem)
+console.log()
 switch(diaSem){
     case 0:
         console.log('Domingo')
