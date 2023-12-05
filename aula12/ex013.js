@@ -1,5 +1,9 @@
 var agora = new Date()
 var diaSem = agora.getDay()
+
+//teste dia invalido
+//diaSem = 8
+
 /*
     0 = domingo
     1 = segunda
@@ -32,4 +36,6 @@ switch(diaSem){
     case 6:
         console.log('Sábado')
         break
+    default:
+        console.log('ERRO! Dia inválido!')
 }
