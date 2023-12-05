@@ -4,13 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-size: 18pt;
+        }
+        h1{
+            text-align: center;
+            background-color: gray;
+            border-radius: 15px;
+        }
+        div#res{
+            padding-top: 30px;
+        }
+        input#txtvel{
+            font-weight: bold;
+            font-size: 16pt;
+            text-align: center;
+            width: 80px;
+            border-radius: 10px;
+        }
+        input.btn{
+            font-weight: bolder;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px rgba(0,0,0);
+        }
+    </style>
 </head>
 <body>
     <h1>Sistema de Multas</h1>
-    Velocidade do carro: <input id="txtvel" type="number" name="txtvel"> km/h
-    <input type="button" value="Verificar" onclick="calcular()">
+    <div>
+        Velocidade do carro: <input id="txtvel" type="number" name="txtvel"> km/h
+        <input class="btn" type="button" value="VERIFICAR" onclick="calcular()">
+    </div>
     <div id="res">
-
+        RESULTADO
     </div>
     <script>
         function calcular(){
