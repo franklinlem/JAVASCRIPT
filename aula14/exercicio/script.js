@@ -11,9 +11,15 @@ function contar(){
         var i = Number(ini.value)
         var f = Number(fim.value)
         var p = Number(passo.value)
+        if(i<f){
+            //contagem crescente
+            for (let c=i; c<=f; c+=p){
+                res.innerHTML+= `${c} \u{1f449}`
+        } else{
+            //contagem regressiva
+        }
+        res.innerHTML+=`\u{1f3c1}`
 
-        for (let c=i; c<=f; c+=p){
-            res.innerHTML+= `${c} `
         }
     }
 }
