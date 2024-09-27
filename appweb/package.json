@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "appweb",
+  "version": "1.0.0",
+  "description": "página web",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Franklin Martins",
+  "license": "ISC"
+}
