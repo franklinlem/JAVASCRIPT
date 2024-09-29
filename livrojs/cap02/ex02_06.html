@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan House</title>
+    <style>
+        body{
+            background-color: brown;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            animation-duration: 2s;
+            animation-name: slidein;
+        }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1>Lan House JS</h1>
+    <form>
+        <p>
+            Valor por até 15 minutos de uso: R$ 
+            <input type="number" name="preco" id="inPreco" step="0.01">
+        </p>
+        <p>
+            Tempo de uso do cliente (em minutos): 
+            <input type="number" name="tempo" id="inTempo" min="1">
+        </p>
+        <input type="submit" value="Calcular">
+    </form>
+    <div>
+    <h3></h3>
+    </div>
+    <script src="script06.js"></script>
+</body>
+</html>
