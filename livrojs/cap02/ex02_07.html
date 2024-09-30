@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado JS</title>
+    <style>
+        body{
+            background-color: green;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        h3{
+            text-decoration: underline
+        }
+    </style>
+</head>
+<body>
+    <h1>SUPERMERCADO JS</h1>
+    <form>
+        <p>
+            Produto: 
+            <input type="text" name="produto" id="inProduto" required>
+        </p>
+        <p>
+            Preço: 
+            <input type="number" name="preco" id="inPreco" step="0.01" required>
+        </p>
+        <input type="submit" value="Ver Promoção">
+    </form>
+    <h3 id="outResp1"></h3>
+    <h3 id="outResp2"></h3>
+    <script src="script07.js"></script>
+</body>
+</html>
