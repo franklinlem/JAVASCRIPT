@@ -1,0 +1,226 @@
+O que são protocolos de Internet e quais
+ os mais usados?
+ A Internet (https://www.hostmidia.com.br/blog/o-que-e-internet/) está presente em
+ tantas situações do nosso quotidiano, que já nem pensamos no que está por trás,
+ o que ela envolve e que permite que a “mágica” aconteça.
+ No entanto, entre muitas coisas, em meio a uma imensa infraestrutura e muitas
+ tecnologias, um aspecto é vital para usufruirmos de tudo – os protocolos de
+ Internet.
+ Saber ou não o que são e como funcionam, não é condição para você continuar
+ desfrutando dos seus Apps, visitando seus sites favoritos, enviando e recebendo
+ e-mails, ou fazendo qualquer outro uso da rede mundial de computadores.
+ Mas pode ser útil em aspectos como a cada vez mais vital segurança na Internet
+ (https://www.hostmidia.com.br/blog/o-mundo-digital-e-seguro/).
+Os que são protocolos de Internet?
+ Resumidamente, protocolos são regras definidas e precisas de como algo deve
+ acontecer. Protocolos de Internet, são portanto, o conjunto de regras de como as
+ coisas devem acontecer na Internet.
+ Mas não exatamente quaisquer coisas.
+ Quando falamos dos protocolos de Internet, estamos nos referindo aos principais
+ serviços que usamos, como o acesso a um site, o download de um arquivo ou o
+ acesso à conta de e-mail, para citar apenas algumas situações corriqueiras.
+ Sob uma ótica mais rigorosa, antes de serem protocolos de Internet, são
+ protocolos de rede.
+ E a Internet e seu funcionamento, nada mais é do que muitas redes conectadas
+ entre si.
+ Para que servem os protocolos de Internet?
+ Os protocolos de Internet existem e foram criados para possibilitar a comunicação
+ entre dois pontos da rede – ou dois dispositivos – independente de fatores como
+ localização geográfica, fabricantes dos dispositivos, características pessoais dos
+ usuários ou outros fatores de diferenciação, de forma sempre igual, segura e
+ eficiente.
+ Assim, não importa se você está usando um smartphone Android
+ (https://www.hostmidia.com.br/blog/o-que-e-android/) de última geração ou um
+ desktop de 10 anos de uso com sistema operacional Linux
+ (https://www.hostmidia.com.br/blog/linux/) instalado, os protocolos devem garantir
+ que ambos os dispositivos serão capazes de efetuar algum tipo de conexão e
+ troca de dados.
+Entre outras coisas, esse conjunto de regras estipula que a “comunicação” entre
+ dois dispositivos tão diferentes, ocorra exatamente da mesma maneira.
+ Assim, por exemplo, quando uma mensagem de e-mail
+ (https://www.hostmidia.com.br/blog/email/) é enviada usando-se o SMTP (Simple
+ Mail Transfer Protocol), de acordo com o conjunto de regras que o compõe, os
+ servidores de e-mail envolvidos realizam um “aperto de mãos” – chamado
+ handshake – e que começa com um HELO ou um EHLO (Extended HELO) e que
+ assim como o “alô” das ligações telefônicas, é quando o remetente se apresenta
+ ao servidor de SMTP, informando seu nameserver (nome do servidor) e que por
+ sua vez é um FQDN (Fully Qualified Domain Name).
+ Sim, servidores de e-mail têm um nome baseado em um domínio
+ (https://www.hostmidia.com.br/blog/diferenca-entre-dominio-e-hospedagem/).
+ Assim, o nameserver de um servidor de e-mail da HostMídia pode ser por
+ exemplo: email125.hostmidia.com.br
+ Já o HELO extendido (EHLO), informa que ele é apto a instruções SMTP
+ extendidas, ou em outras palavras, um conjunto mais amplo de comandos SMTP
+ do que aquele que foi inicialmente definido quando o padrão foi criado.
+ Durante essa verdadeira conversa entre o remetente e o servidor que vai receber
+ a mensagem de e-mail, informações diversas são trocadas, sendo que o servidor
+ (https://www.hostmidia.com.br/blog/o-que-e-servidor/) de destino deve ser
+ informado pelo de envio, a cada porção dos dados que é transferida, qual a
+ natureza do dado informado.
+ Assim, quem envia diz em uma sequência definida qual endereço do destinatário,
+ do remetente, os dados que compõem a mensagem, quando terminou o envio
+ dos dados, entre outras ações.
+Cada mensagem de e-mail enviada ou recebida no mundo por meio desse
+ protocolo, segue rigorosamente os mesmos passos, quaisquer que sejam os
+ servidores envolvidos nessa troca.
+ Se por acaso, isso não ocorre, tem-se um erro de SMTP. É quando por exemplo, o
+ endereço IP (https://www.hostmidia.com.br/blog/o-que-e-endereco-ip/) ou o
+ nameserver do remetente não tem autorização para entregar mensagens de e
+mail do remetente, informação que consta no campo SPF
+ (https://www.hostmidia.com.br/blog/spf/) das zonas de DNS
+ (https://www.hostmidia.com.br/blog/o-que-e-dns-e-como-funciona/) do domínio
+ remetente.
+ E como dissemos antes, essa verificação de SPF durante o envio, garante a
+ segurança, pois atesta que o servidor que está realizando o envio, tem
+ autorização de quem detém o domínio, para fazê-lo.
+ Ou seja, protocolos entre outras coisas, são importantes para segurança e
+ método para se fazer as coisas em um ambiente tão complexo quanto é a
+ Internet.
+ Quais os principais protocolos da Internet?
+ Há muitos protocolos na Internet, cada qual presente em situações específicas.
+ Uns mais populares que outros, mas com certeza em maior ou menor grau, todos
+ têm papel e contribuições importantes para fazer da Internet o que conhecemos
+ hoje.
+ A nossa lista, faz menção aos que são hoje mais usados e não necessariamente a
+ ordem em que aparecem, indica o seu nível de adoção, importância ou
+ popularidade.
+Alguns – ou muitos – fazem uso de outros protocolos. Nem todos serão citados,
+ justamente porque há muitos.
+ No exemplo do SMTP, o mais aparente, é o IP, que é um endereço, mas é também
+ um protocolo, pelo qual cada dispositivo de uma rede, tem um endereço único.
+ Aliás, o TCP/IP e que é a união de dois protocolos – o TCP (Transmission Control
+ Protocol) + IP (Internet Protocol) – é o mais usado, na medida em que todos os
+ demais fazem seu uso.
+ 1. TCP/IP
+ Como adiantamos, o TCP/IP é a combinação de dois outros protocolos. Eles são
+ os responsáveis por todo o envio e recebimento de dados em todas as redes e
+ consequentemente, na Internet.
+ De modo bastante simplificado, essa combinação de protocolos é dividida em 4
+ camadas, em que primeiro há o recebimento das informações (camada de
+ aplicação), depois elas fracionadas em pacotes ou conjuntos definidos de dados
+ para o formato da rede (transporte), para a seguir serem endereçados (rede) e
+ f
+ inalmente enviados ao destino (interface).
+ 2. HTTP e HTTPS
+ Entre os mais usados e dos mais antigos, o HTTP (HyperText Transfer Protocol), é
+ o que é usado toda vez que acessamos um site.
+ Você não precisa digitar “http://” a cada endereço que preenche no campo de
+ endereço do navegador (https://www.hostmidia.com.br/blog/navegadores-de
+internet/), mas assim que dá o enter, ele aparece lá. O browser “entende” que é o
+ protocolo padrão para sites e estabelece a conexão com o servidor no qual o site
+ está hospedado, usando o HTTP.
+À medida em que a evolução da Internet exigiu mais cuidados com aspectos de
+ segurança, o HTTP puro e simples, vem caindo em desuso em detrimento do
+ HTTPS (https://www.hostmidia.com.br/blog/o-que-e-https/), que nada mais é do
+ que dotar a troca de dados entre o servidor e o visitante de criptografia
+ (https://www.hostmidia.com.br/blog/o-que-e-criptografia/), por meio da instalação
+ de um certificado SSL (https://www.hostmidia.com.br/blog/certificado-ssl/).
+ Mas pode ser que em breve, comecemos a ver a popularização de outro
+ protocolo com mesma finalidade, mas que promete melhor desempenho – o
+ HTTP/3 (https://www.hostmidia.com.br/blog/o-que-e-http3-e-quic/).
+ No caso de muitos apps que temos instalados nos nossos smartphones, é
+ também o HTTPS o protocolo envolvido, já que muitas vezes um app nada mais é
+ do que um navegador especializado, que exibe apenas um site também
+ especializado e que pode ser um aplicativo de compras, por exemplo.
+ 3. XMPP
+ Esse não é tão popularmente conhecido por seu nome, como os dois anteriores,
+ mas está entre os mais usados. Se você usa o Signal (https://signal.org/pt_BR/), o
+ Telegram ou Whatsapp (https://www.jivochat.com.br/blog/comunicacao/conta
+comercial-whatsapp.html), é graças a ele.
+ O Extensible Messaging and Presence Protocol ou apenas XMPP
+ (https://xmpp.org/), é o protocolo de comunicação aberta e open source
+ (https://www.hostmidia.com.br/blog/o-que-e-open-source/), usado por todos os
+ programas de comunicação instantânea mais populares.
+ Apesar de hoje ser tão popular nos apps dos smartphones, ele já era usado em
+ comunicadores como o antigo AIM
+ (https://pt.wikipedia.org/wiki/AOL_Instant_Messenger).
+Por sua simplicidade e ao mesmo tempo a funcionalidade, combinado com uma
+ camada de segurança fazendo uso de criptografia de ponta a ponta, tem ganho
+ espaço em aplicações orientadas a Internet das Coisas (IoT
+ (https://www.hostmidia.com.br/blog/iot-saiba-o-que-e-internet-das-coisas-e-como
+funciona/)).
+ 4. POP, IMAP e SMTP
+ Apesar dos apps de comunicação instantânea terem diminuído o seu uso, os
+ protocolos envolvidos no gerenciamento de contas de e-mail, ainda são muito
+ usados, pois há diversas situações, especialmente nas rotinas comerciais, em que
+ o e-mail ainda é essencial.
+ Sim, POP, IMAP e SMTP (https://www.hostmidia.com.br/blog/pop-imap-smtp/) estão
+ relacionados com envio e recebimento de e-mail.
+ O POP – mais precisamente POP3 – também conhecido como Post Office
+ Protocol, é o conjunto de regras para que um dispositivo conecte-se a um
+ servidor de e-mail e faça o download das mensagens relativas a uma conta de e
+mail. Por padrão, assim que mensagens a transferência para o dispositivo de
+ destino é concluída, as mensagens são apagadas do servidor.
+ No entanto, muitos programas de gerenciamento de e-mail (MS Outlook,
+ Thunderbird, Apple Mail, etc) permitem habilitar uma opção pela qual uma cópia
+ da mensagem é mantida no servidor.
+ Já o IMAP ou Internet Message Access Protocol e que significa Protocolo de
+ Acesso a Mensagem de Internet, ocorre a leitura da estrutura de pastas e do
+ conteúdo contido nelas em tempo real, ou seja, há a sincronização entre o
+ programa usado e a conta de e-mail.
+Toda ação usando esse protocolo, afeta diretamente o conteúdo no servidor de
+ e-mail. Assim, a criação ou remoção de pastas, as alterações nos seus conteúdos,
+ modifica a estrutura e o conteúdo da conta de e-mail no servidor.
+ Por fim, o SMTP, como já vimos, é o conjunto de regras que determina como são
+ enviadas mensagens de e-mail para o servidor que hospeda um domínio e
+ consequentemente as contas de e-mail sob ele.
+ 5. DHCP
+ O DHCP – acrônimo para Dynamic Host Configuration Protocol – é outro desses
+ cujo nome não é tão popular, mas que todo mundo usa.
+ A conexão a muitas redes locais, como no Wi-Fi
+ (https://www.hostmidia.com.br/blog/wi-fi/) residencial, em hotspots, nos modens
+ dos provedores de acesso e até em algumas empresas, ocorre fazendo uso do
+ DHCP.
+ De forma simplificada, ele determina de forma dinâmica e automática a atribuição
+ de um endereço IP para seu dispositivo. Assim, a cada conexão feita, o
+ dispositivo (smartphone, notebook, tablet, etc) recebe um IP que pode ser
+ diferente da conexão anterior, de acordo com a disponibilidade de endereços IPs
+ livres.
+ Mas também é possível efetuar o processo manualmente e de forma estática.
+ Assim, configura-se no dispositivo responsável pelo DHCP (ex: modem ou
+ roteador) o mac address da placa de rede para o qual estará reservado cada IP
+ da rede.
+6. FTP, SFTP e FTPS
+ Outro dos primeiros protocolos, o FTP (https://www.hostmidia.com.br/blog/o-que
+e-ftp/) é a sigla de File Transfer Protocol, ou Protocolo de Transferência de
+ Arquivos em português, já foi dos mais usados.
+ Anteriormente à popularização dos CMS
+ (https://www.hostmidia.com.br/blog/cms/)s, todo e qualquer site que fosse criado,
+ era enviado ao servidor por FTP.
+ Mas mesmo com o amplo uso de CMSs como o WordPress
+ (https://www.hostmidia.com.br/blog/o-que-e-wordpress/), ainda é usado, quando
+ por exemplo, é necessário enviar o logo, uma foto, ou outro arquivo do seu
+ computador para o servidor.
+ Já o FTPS, é o FTP sendo que os dados são criptografados usando uma camada
+ de segurança, no caso o SSL (Secure Socket Layer). Ou seja, se eventualmente
+ um terceiro intercepta os dados trocados, eles estão criptografados e não podem
+ ser usados ou lidos, sem a chave para decriptação.
+ Assim como o FTPS, o SFTP também institui uma camada extra de segurança,
+ porém usando o protocolo de segurança SSH
+ (https://www.hostmidia.com.br/blog/ssh/) (Secure Shell).
+ 7. SSH
+ Eis mais um exemplo de protocolo cujo nome não é dos mais populares, mas cuja
+ importância e uso ainda é vital para muitos.
+ Todo administrador de servidor e muitos administradores de sites, usam
+ extensivamente o SSH.
+Ele permite a conexão criptografada entre um dispositivo remoto e um servidor e
+ a execução de comandos nesse servidor, tal como se o usuário estivesse
+ presencialmente manipulando a máquina.
+ Mas por basear-se no modelo cliente / servidor e ser também um serviço, se um
+ dispositivo qualquer na rede rodar o serviço SSH, mesmo não sendo um servidor
+ típico, ele pode ser acessado por outro dispositivo da rede e por meio de linhas
+ de comando (https://www.hostmidia.com.br/blog/linha-de-comando-linux/), ser
+ utilizado remotamente.
+ 8. ICMP
+ O ICMP (Internet Control Message Protocol) ou Protocolo de Mensagens de
+ Controle da Internet (ICMP), em português é um protocolo cujo principal objetivo
+ é diagnosticar problemas de comunicação em uma rede ou entre redes, como
+ por exemplo, se os dados estão chegando ao destino dentro de um intervalo de
+ tempo adequado.
+ Quando dois pontos de uma rede trocam dados, se um erro ou uma condição
+ não desejável ocorre, é função do ICMP informar ao destino o erro ocorrido na
+ tentativa de trafegar os dados.
+ Conclusão
+ Graças aos protocolos de Internet o acesso a um site ou o uso dos populares
+ apps que temos no nosso smartphone, é possível de modo seguro, metódico e
+ eficiente.
