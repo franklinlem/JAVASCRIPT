@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Node</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando página com Javascript!</h1>
+    <p id="res"></p>
+</body>
+<script>
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then(resposta => resposta.json())
+    .then(data => {
+        document.getElementById("res").innerHTML += data;
+        console.log(data);
+    });
+    //para dados em texto use o método response.text()
+    //para dados Json use response.json()
+    //para dados binários como imagem, audio ou video, use blob()
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => response.json())
+    .then(data => { 
+        console.log("Id do Usuário: " + data.userId); 
+        console.log("Id do post: " + data.id); 
+        console.log("Título: " + data.title); 
+        console.log("Conteúdo: " + data.body); 
+    });
+
+    //icializador com url: fetch("URL",{})
+
+    /*exemplo: 
+    fetch("http://localhost:3000/", {
+    mode: "no-cors",
+    method: "GET"
+    });*/
+
+    /*exemplo com corpo de requisição: 
+    fetch("http://localhost:3000/", {
+    mode: "no-cors",
+    body: "Essa string será enviada ao servidor.",
+    method: "POST"
+    });*/
+
+</script>
+</html>

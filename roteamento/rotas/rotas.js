@@ -35,9 +35,19 @@ roteador.delete("/excluir", (req, res) => {
     res.end(data.excluirUsuario());
 });
 
-// Endpoint de página não encontrada
+// Endpoint de página inválida
 roteador.all("*", (req, res) => {
     res.status(500).end(data.erro());
 });
+
+/* roteador.get("/pedidos/:item", (req, res) => {
+    console.log(req.params.item);
+});
+ */
+
+/* roteador.get("/consulta/", (req, res) => {
+    console.log(req.query.id);
+    console.log(req.query.nome);
+}); */
 
 module.exports.roteador = roteador;

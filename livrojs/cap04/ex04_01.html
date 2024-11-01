@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições em Javascript</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Programa Situação do Aluno</h1>
+    <form>
+        <p>Nome do Aluno: 
+        <input type="text" id="inNome" required></p>
+        <p>1ª Nota: 
+        <input type="number" id="inNota1" step="0.1" min="0" max="10" required></p>
+        <p>2ª Nota: 
+        <input type="number" id="inNota2" step="0.1" min="0" max="10" required></p>
+        <input type="submit" value="Exibir Média e Situação">
+    </form>
+    <h3></h3>
+    <h4></h4>
+    <script src="ex04_01.js">
+        const frm = document.querySelector("form")
+const resp1 = document.querySelector("h3")
+const resp2 = document.querySelector("h4")
+
+frm.addEventListener("submit", (e) => {
+    
+    const nome = frm.inNome.value
+    const nota1 = Number(frm.inNota1.value)
+    const nota2 = Number(frm.inNota2.value)
+    const media = (nota1 + nota2) / 2
+    resp1.innerText = `Média das notas = ${media.toFixed(2)}`
+    if (media >= 4.5){
+        resp2.innerText = `Parabéns ${nome}! Você foi APROVADO!!!`
+        resp2.style.color = "blue"
+    } else {
+        resp2.innerText = `Infelizmente ${nome}, você foi REPROVADO!!!`
+        resp2.style.color = "red"
+    }
+    e.preventDefault()
+})
+    </script>
+</body>
+</html>

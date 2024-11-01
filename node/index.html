@@ -23,5 +23,16 @@
         document.getElementById("res").innerHTML += data;
         console.log(data);
     });
+    //para dados em texto use o método response.text()
+    //para dados Json use response.json()
+    //para dados binários como imagem, audio ou video, use blob()
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => response.json())
+    .then(data => { 
+        console.log("Id do Usuário: " + data.userId); 
+        console.log("Id do post: " + data.id); 
+        console.log("Título: " + data.title); 
+        console.log("Conteúdo: " + data.body); 
+    });
 </script>
 </html>
