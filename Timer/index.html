@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .timer-container {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        #timer {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 10px 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+        .campos{
+            margin: 10px;
+        }
+        .botoes{
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer-container">
+        <h1>Timer</h1>
+        <div id="timer">00:00:00</div>
+        <h4>Selecione o tempo desejado</h4>
+        <div class="campos">
+        <input type="number" id="hours" placeholder="Horas" min="0" max="99">
+        <input type="number" id="minutes" placeholder="Minutos" min="0" max="59">
+        <input type="number" id="seconds" placeholder="Segundos" min="0" max="59">
+        <br>
+        </div>
+
+        <div class="botoes">
+            <button onclick="startTimer()">Iniciar</button>
+            <button onclick="pauseTimer()">Pausar</button>
+            <button onclick="resetTimer()">Resetar</button>
+        </div>
+    </div>
+
+    <audio id="alarmSound">
+        <source src="https://www.soundjay.com/phone/sounds/phone-off-hook-1.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <script>
+        let timer;
+        let totalSeconds = 0;
+        let isRunning = false;
+
+        function startTimer() {
+            if (!isRunning) {
+                const hours = parseInt(document.getElementById('hours').value) || 0;
+                const minutes = parseInt(document.getElementById('minutes').value) || 0;
+                const seconds = parseInt(document.getElementById('seconds').value) || 0;
+
+                totalSeconds = hours * 3600 + minutes * 60 + seconds;
+
+                if (totalSeconds > 0) {
+                    isRunning = true;
+                    timer = setInterval(updateTimer, 1000);
+                }
+            }
+        }
+
+        function updateTimer() {
+            if (totalSeconds > 0) {
+                totalSeconds--;
+                displayTimer(totalSeconds);
+            } else {
+                clearInterval(timer);
+                isRunning = false;
+                document.getElementById("alarmSound").play();
+            }
+        }
+
+        function pauseTimer() {
+            clearInterval(timer);
+            isRunning = false;
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            isRunning = false;
+            totalSeconds = 0;
+            displayTimer(totalSeconds);
+            document.getElementById('hours').value = '';
+            document.getElementById('minutes').value = '';
+            document.getElementById('seconds').value = '';
+        }
+
+        function displayTimer(totalSecs) {
+            const hours = Math.floor(totalSecs / 3600);
+            const minutes = Math.floor((totalSecs % 3600) / 60);
+            const seconds = totalSecs % 60;
+
+            document.getElementById('timer').textContent = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+        }
+
+        function pad(value) {
+            return value.toString().padStart(2, '0');
+        }
+    </script>
+</body>
+</html>
