@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS</title>
+    <style>
+        *{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com NodeJS</h1>
+    <h2>CALLBACKS</h2>
+    <p id="res"></p>
+    <script>
+        let msg = "Texto original!";
+
+        function mudaTexto(){
+            return new Promise(resolve => {
+                setTimeout ( () =>{
+                    msg = "Texto alterado!";
+                    resolve(msg);
+                }, 3000);
+            });
+        }
+        mudaTexto().then(res=>{
+            console.log(res);
+        }).catch(err => {
+            console.error(err);
+        });
+    </script>
+</body>
+</html>
