@@ -1,3 +1,4 @@
+//programa pagamento de pesque e pague
 const prompt = require("prompt-sync")()
 const pessoas = Number(prompt("Número de pessoas: "))
 const peixes = Number(prompt("Número de peixes: "))
