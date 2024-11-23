@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body{
+    background: linear-gradient(to right, darkgrey, lightgrey);
+    color: black;
+    text-align: justify;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    font-weight: bolder;
+    border-bottom: inset;
+}
+
+img{
+    float: left;
+    margin: 15px;
+    padding: 15px;
+}
+
+form{
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+input{
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Definir o elemento que irá piscar */
+.elemento-piscando {
+    animation: piscar 1s infinite;
+  }
+  
+  /* Definir a animação */
+  @keyframes piscar {
+    20% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

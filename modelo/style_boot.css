@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body{
+    background: linear-gradient(to right, darkgrey, lightgrey);
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    font-weight: bolder;
+    border-bottom: inset;
+}
