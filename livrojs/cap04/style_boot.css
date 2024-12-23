@@ -4,6 +4,7 @@ body{
     background: linear-gradient(to right, darkgrey, lightgrey);
     color: black;
     text-align: justify;
+    margin-left: 10px;
 }
 
 .titulo{
@@ -47,3 +48,8 @@ input{
       opacity: 1;
     }
   }
+
+.center{
+    text-align: center;
+    margin: 0 auto;
+}
