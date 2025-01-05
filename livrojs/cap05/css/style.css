@@ -1,4 +1,21 @@
 @charset "utf-8";
+*{
+    background-color: bisque;
+    font-family:Arial, Helvetica, sans-serif
+}
+.button{
+    background-color: #14405e;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 30px;
+    font-size: large;
+}
+input{
+    background-color: white;
+}
 img.normal{
     float: left;
     height: 300px;
@@ -13,6 +30,8 @@ img.alta{
 }
 h1{
     border-bottom-style: inset;
+    border-color: black;
+    text-shadow: 2px 2px 5px #898484;
 }
 pre{
     font-size: 1.2em;
