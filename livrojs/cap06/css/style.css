@@ -39,12 +39,11 @@ pre{
 .fonte-azul{
     color: blue;
 }
-.oculta{
+.oculto {
     display: none;
 }
-.exibe{
-    display: block;
-}
-.italico{
+.exibe {
+    display: inline;
+}.italico{
     font-style: italic;
 }
