@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultório Odontológico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="img/sala_espera.png" alt="Sala de Espera" class="alta">
+
+    <h1>Programa para Atendimento no Consultório</h1>
+
+    <form>
+        <p>Paciente:
+            <input type="text" id="inPaciente" required autofocus>
+        </p>
+        <p><input class="button" type="submit" value="Adicionar">
+           <input class="button" type="button" value="Urgência" id="btUrgencia">
+           <input class="button" type="button" value="Atender" id="btAtender">
+        </p>
+    </form>
+
+    <h3>Em atendimento: 
+        <span class="fonte-azul"></span>
+    </h3>
+    <h4>Em espera: </h4>
+    <pre></pre>
+
+    <script src="js/ex06_01.js"></script>
+</body>
+</html>
