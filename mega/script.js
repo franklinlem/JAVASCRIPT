@@ -19,9 +19,10 @@ frm.addEventListener('submit', (e) => {
     const dezenas = Number(frm.inDezenas.value)
     const jogos = Number(frm.inJogos.value)
 
-    const lista1 = [10, 53, 33, 34, 5, 37, 38, 32, 42, 11, 30, 44, 17, 23, 35]
-    const lista2 = [26, 21, 55, 15, 22, 31, 48, 3, 40, 9, 12, 7, 18, 47, 39]
-    const lista3 = [43, 46, 4, 27, 41, 28, 16, 56, 13, 54, 49, 51, 36, 6, 25, 29, 52, 2, 24, 45, 20, 50, 8, 59, 58, 1, 14, 19, 57, 60]
+    const lista1 = [10, 53, 5, 37, 34, 38, 33, 4, 32, 30, 27, 17, 11, 56, 54] 
+    const lista2 = [58, 47, 18, 9, 40, 12, 48, 7, 31, 3, 15, 22, 55, 21, 26]
+    const lista3 = [42, 35, 46, 44, 23, 43, 41, 16, 13, 28, 51, 49, 36, 52, 24,
+                    2, 29, 25, 6, 8, 50, 45, 20, 19, 14, 1, 59, 60, 57, 39]
 
     const dezenasMap = {
         6: [2, 1, 3],
@@ -47,7 +48,8 @@ frm.addEventListener('submit', (e) => {
             randomNumbersList.push(...getRandomNumbers(lista2, num2));
             randomNumbersList.push(...getRandomNumbers(lista3, num3));
         }
-        let resposta = randomNumbersList.join(' - ');
+        randomNumbersList.sort((a, b) => a - b);   // Ordena os números em ordem crescente
+        let resposta = (i+1) + 'º jogo: ' + randomNumbersList.join(' - ');
         resp1.innerText += resposta + '\n';
     }
 })
