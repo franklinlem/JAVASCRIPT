@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcula Boleto</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Programa para Calcular Boleto Bancário</h1>
+    <form>
+      <p>
+        Data de vencimento:
+        <input
+          type="date"
+          id="inDataVenc"
+          name="Data de Vencimento"
+          autofocus
+          required
+        />
+      </p>
+      <p>
+        Valor da Conta: R$
+        <input
+          type="number"
+          id="inValor"
+          name="Valor da Conta"
+          min="0"
+          step="0.01"
+          class="alinha-direita"
+          required
+        />
+        <input type="submit" value="Calcular Multa e Juros" />
+      </p>
+      <p>
+        Valor da Multa: R$
+        <input type="number" id="outMulta" class="alinha-direita" readonly />
+      </p>
+      <p>
+        Valor dos Juros: R$
+        <input type="number" id="outJuros" class="alinha-direita" readonly />
+      </p>
+      <p>
+        Total a Pagar: R$
+        <input type="number" id="outTotal" class="alinha-direita" readonly />
+        <input type="reset" value="Nova Conta" />
+      </p>
+    </form>
+
+    <h3></h3>
+
+    <img
+      src="./calculaBoleto.png"
+      alt="imagem ilustrativa"
+      height="50%"
+      width="50%"
+    />
+
+    <script src="./script.js"></script>
+  </body>
+</html>
