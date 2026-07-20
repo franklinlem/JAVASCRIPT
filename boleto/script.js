@@ -1,13 +1,12 @@
 const frm = document.querySelector("form");
 const resp = document.querySelector("h3");
 
-const TAXA_MULTA = 2 / 100;
-const TAXA_JUROS = 0.33 / 100;
-
 frm.addEventListener("submit", (e) => {
   e.preventDefault();
   const dataVenc = frm.inDataVenc.value;
   const valor = Number(frm.inValor.value);
+  const TAXA_MULTA = Number(frm.inMulta.value);
+  const TAXA_JUROS = Number(frm.inJuros.value);
   const hoje = new Date();
   const vencto = new Date(dataVenc);
 
@@ -21,9 +20,9 @@ frm.addEventListener("submit", (e) => {
   let juros = 0;
 
   if (atraso > 0) {
-    const dias = atraso / (1000 * 60 * 60 * 24);
-    multa = valor * TAXA_MULTA;
-    juros = valor * TAXA_JUROS * dias;
+    const dias = atraso / 86400000; //(1000 * 60 * 60 * 24);
+    multa = valor * (TAXA_MULTA / 100);
+    juros = valor * (TAXA_JUROS / 100) * dias;
   }
   const total = valor + multa + juros;
 
